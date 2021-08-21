@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+}
+
+.square {
+  width: 330px;
+  height: 440px;
+  margin: auto;
+  padding: 5.7rem 2.9rem;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.7rem 0.7rem 0 0;
+  background-image: url(./images/icon-sedans.svg);
+  background-repeat: no-repeat;
+  background-position-x: 3rem;
+  background-position-y: 3rem;
+}
+
+.blue {
+  background-color: hsl(184, 100%, 22%);
+  background-image: url(./images/icon-suvs.svg);
+  background-repeat: no-repeat;
+  background-position-x: 3rem;
+  background-position-y: 3rem;
+}
+
+.green {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 0.7rem 0.7rem;
+  background-image: url(./images/icon-luxury.svg);
+  background-repeat: no-repeat;
+  background-position-x: 3rem;
+  background-position-y: 3rem;
+}
+
+/* modificação dos textos */
+
+.text {
+  font-family: sans-serif;
+}
+
+.text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(246, 244, 241, 0.698);
+}
+
+.text p {
+  position: relative;
+  top: -0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: rgba(246, 244, 240, 0.712);
+}
+
+/* modificação do botão */
+
+.button {
+  position: relative;
+  top: 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 0.9rem;
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.laranja {
+  color: hsl(31, 77%, 52%);
+}
+
+.azul {
+  color: hsl(184, 100%, 22%);
+}
+
+.verde {
+  color: hsl(179, 100%, 13%);
+}
+
+/* nota de roda pé */
+
+.attribution {
+  position: relative;
+  top: 1rem;
+}
+
+/* para tela de 1000px  */
+
+@media (min-width: 1000px) {
+  main {
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .square {
+    margin: 0;
+    width: 300;
+  }
+
+  .orange {
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+
+  .green {
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+}
